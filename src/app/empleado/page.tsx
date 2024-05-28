@@ -1,7 +1,6 @@
 // "use client";
 import Image from 'next/image'
 import {useEffect, useState} from "react"
-import Cards from '../components/Empleados/Card';
 
 export interface Employee {
   employee_name: string;
@@ -28,7 +27,7 @@ export default async function Home() {
   return (
     <div className='flex items-center justify-center'>
       <div className='w-4/5 py-8 '>
-        <Cards employeeList={employeesList} />
+        
 
       </div>
     </div>
