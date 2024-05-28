@@ -8,7 +8,7 @@ export default function Cards(props:{ employeeList: Employee[]}) {
     // console.log(employeeList);
     
     return (
-    <div className='grid grid-cols-4 gap-4 bg-inherit'>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-inherit'>
         {
             employeeList.map((employee, index) => {
                 return (
@@ -19,11 +19,11 @@ export default function Cards(props:{ employeeList: Employee[]}) {
                             </div>
                         
                         </div>
-                        <div>
-                        {employee.employee_name}
+                        <div className="text-black">
+                            {employee.employee_name}
                         </div>
-                        <div>
-                        {employee.employee_salary}
+                        <div className="text-black">
+                            {employee.employee_salary}
                         </div>
                         
                     </div>
