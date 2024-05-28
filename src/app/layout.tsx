@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       
 
-      <body className={inter.className+" min-h-[100vh] "}>
+      <body className={inter.className+" min-h-[100vh] bg-gray-200"}>
         <Header />
         {children}
       </body>
