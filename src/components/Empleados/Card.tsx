@@ -12,7 +12,7 @@ export default function Cards(props:{ employeeList: Employee[]}) {
         {
             employeeList.map((employee, index) => {
                 return (
-                    <div key={`employee-${index}`} className="flex flex-col rounded bg-white p-6">
+                    <a href={`./empleado/${employee.id}`} key={`employee-${index}`} className="flex flex-col rounded bg-white p-6">
                         <div className="flex justify-center">
                             <div className="rounded-full bg-gray-200 w-24 h-24 flex justify-center items-center">
                                 <UserIcon width={40} height={40} />
@@ -26,7 +26,7 @@ export default function Cards(props:{ employeeList: Employee[]}) {
                             {employee.employee_salary}
                         </div>
                         
-                    </div>
+                    </a>
                 )
             })
         }
